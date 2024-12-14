@@ -1,0 +1,12 @@
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\bin\Debug\net6.0\BuildersDAO.deps.json
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\bin\Debug\net6.0\BuildersDAO.dll
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\bin\Debug\net6.0\BuildersDAO.pdb
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.csproj.AssemblyReference.cache
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.AssemblyInfoInputs.cache
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.AssemblyInfo.cs
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.csproj.CoreCompileInputs.cache
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.dll
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\refint\BuildersDAO.dll
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\BuildersDAO.pdb
+C:\Users\sakshita\OneDrive\Desktop\Asset Transfer\capstone_aelf\src\obj\Debug\net6.0\ref\BuildersDAO.dll

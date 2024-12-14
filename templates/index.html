@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAO Chatbot Login & Asset Management</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    input, textarea { margin: 10px 0; }
+    button { padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+  </style>
+</head>
+<body>
+
+  <h1>DAO Chatbot Login & Asset Management</h1>
+
+  <!-- Login Form -->
+  <div id="login-section">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="wallet">Wallet Address:</label><br>
+      <input type="text" id="wallet" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" required><br><br>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Chatbot Interface (Visible after login) -->
+  <div id="chatbot-section" style="display: none;">
+    <h2>DAO Chatbot</h2>
+    
+    <form id="create-asset-form">
+      <label for="title">Asset Title:</label><br>
+      <input type="text" id="title" required><br><br>
+
+      <label for="description">Asset Description:</label><br>
+      <textarea id="description" required></textarea><br><br>
+
+      <label for="vote-threshold">Vote Threshold:</label><br>
+      <input type="number" id="vote-threshold" required><br><br>
+
+      <button type="submit">Create Asset</button>
+    </form>
+    
+    <h3>Assets</h3>
+    <div id="assets-list"></div>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const loginSection = document.getElementById('login-section');
+    const chatbotSection = document.getElementById('chatbot-section');
+    const createAssetForm = document.getElementById('create-asset-form');
+    const assetsList = document.getElementById('assets-list');
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const walletAddress = document.getElementById('wallet').value;
+      const password = document.getElementById('password').value;
+
+      // Authenticate the user with the Flask backend
+      const response = await fetch('http://localhost:5000/authenticate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ walletAddress, password }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Save JWT token to localStorage
+        localStorage.setItem('token', data.token);
+        loginSection.style.display = 'none';
+        chatbotSection.style.display = 'block';
+      } else {
+        alert('Invalid credentials. Please try again.');
+      }
+    });
+
+    createAssetForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const title = document.getElementById('title').value;
+      const description = document.getElementById('description').value;
+      const voteThreshold = document.getElementById('vote-threshold').value;
+
+      const token = localStorage.getItem('token');
+      
+      // Call the backend to create the asset
+      const response = await fetch('http://localhost:5000/create_asset', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({ title, description, voteThreshold }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert(data.message);
+        loadAssets();
+      } else {
+        alert(data.message);
+      }
+    });
+
+    // Function to load and display assets
+    async function loadAssets() {
+      const response = await fetch('http://localhost:5000/get_assets');
+      const data = await response.json();
+      
+      if (data.assets.length > 0) {
+        let assetsHtml = '<ul>';
+        data.assets.forEach(asset => {
+          assetsHtml += `<li><strong>${asset.title}</strong> - ${asset.description} (Threshold: ${asset.vote_threshold})</li>`;
+        });
+        assetsHtml += '</ul>';
+        assetsList.innerHTML = assetsHtml;
+      } else {
+        assetsList.innerHTML = 'No assets available.';
+      }
+    }
+
+  </script>
+
+</body>
+</html>

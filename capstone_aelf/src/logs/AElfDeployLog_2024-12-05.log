@@ -1,0 +1,36 @@
+2024-12-05 12:48:42,175 [1] INFO  AElfChain.Common.Managers.NodeManager - Url:https://tdvw-test-node.aelf.io/ is connected!
+2024-12-05 12:48:42,824 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! $@K$#!two504
+2024-12-05 12:48:43,296 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! 12345678
+2024-12-05 12:51:21,392 [1] INFO  AElfChain.Common.Managers.NodeManager - Url:https://tdvw-test-node.aelf.io/ is connected!
+2024-12-05 12:51:21,533 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! $@K$#!two504
+2024-12-05 12:51:22,061 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! 12345678
+2024-12-05 12:52:06,985 [1] INFO  AElfChain.Common.Managers.NodeManager - Url:https://tdvw-test-node.aelf.io/ is connected!
+2024-12-05 12:52:07,077 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! $@K$#!two504
+2024-12-05 12:52:07,481 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! 12345678
+2024-12-05 12:53:05,244 [1] INFO  AElfChain.Common.Managers.NodeManager - Url:https://tdvw-test-node.aelf.io/ is connected!
+2024-12-05 12:53:05,335 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! $@K$#!two504
+2024-12-05 12:53:06,214 [1] ERROR AElfChain.Common.Managers.AccountManager - sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea: Incorrect password! 12345678
+2024-12-05 12:55:11,078 [1] INFO  AElfChain.Common.Managers.NodeManager - Url:https://tdvw-test-node.aelf.io/ is connected!
+2024-12-05 12:55:11,484 [1] INFO  AElfChain.Common.Managers.AccountManager - Account 'sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea' successfully unlocked!
+2024-12-05 12:55:12,199 [1] INFO  AElfChain.Common.Contracts.GenesisContract - Token contract address: ASh2Wt7nSEmYqnGxPPzp4pnVDU4uhj1XW9Se5VeZcX2UDdyjx
+2024-12-05 12:55:12,768 [1] INFO  AElfChain.Common.Contracts.GenesisContract - Consensus contract address: 2KPUA5wG78nnNmK9JsRWbFiEFUEfei9WKniZuKaVziDKZRwchM
+2024-12-05 12:55:13,083 [1] INFO  AElfChain.Common.Contracts.GenesisContract - Parliament contract address: vcv1qewcsFN2tVWqLuu7DJ5wVFA8YEx5FFgCQBb1jMCbAQHxV
+2024-12-05 12:55:13,168 [1] INFO  AElf.Deploy.Cli.Program - ======== AddWhiteList ========
+2024-12-05 12:55:13,480 [1] INFO  AElf.Deploy.Cli.Program - { "proposers": [ "V6LuP6FXKPoXqR5V9X2XuufZ8wSwKu4kNJbxY8i9JJ4NDPxib", "2UKQnHcQvhBT6X6ULtfnuh3b9PVRvVMEroHHkcK4YfcoH1Z1x2" ] }
+2024-12-05 12:55:13,618 [1] INFO  AElf.Deploy.Cli.Program - ======== Genesis contract is in ProposalWhiteList ========
+2024-12-05 12:55:13,620 [1] INFO  AElf.Deploy.Cli.Program - ======== WithoutApproval ========
+2024-12-05 12:55:16,200 [1] INFO  AElfChain.Common.Contracts.GenesisContract - Transaction method: DeployUserSmartContract, TxId: 3392c8a6097fc9b5475edd907732c914fec9811a05218f471af0647f1f3bce15
+2024-12-05 12:55:19,077 [1] INFO  AElfChain.Common.Managers.NodeManager - Transaction 3392c8a6097fc9b5475edd907732c914fec9811a05218f471af0647f1f3bce15 Method:DeployUserSmartContract, Status: Mined-[Fee=0]
+2024-12-05 12:55:20,094 [1] INFO  AElf.Deploy.Cli.Program - Code hash: fe0b9c89b58b0518729ae9d4e2345e79f0bbaa9c9d141e94ef7326bc60a10382
+ ProposalInput: 59b22260373fe847fe6aa5e35e4dba7c771a67a17729eae1ab9dd55e2849f458
+ Proposal Id: 1987d54ce383e795cb8ad61ea270d57e559c27d2f9aacd5f55a4e37d5b6da9c7
+2024-12-05 12:55:21,473 [1] INFO  AElf.Deploy.Cli.Program - ======== Check Proposal Info ========
+2024-12-05 12:55:50,957 [1] INFO  AElf.Deploy.Cli.Program - Check height: 152471232 - 152471274
+2024-12-05 12:56:14,975 [1] INFO  AElf.Deploy.Cli.Program - Release Transaction: ee95d8cf000650a8a2d23ed2459053eec69c4600c11808422472c2b8147e0fdf
+2024-12-05 12:56:14,980 [1] INFO  AElf.Deploy.Cli.Program - Author: "sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea"
+2024-12-05 12:56:14,982 [1] INFO  AElf.Deploy.Cli.Program - Code hash: fe0b9c89b58b0518729ae9d4e2345e79f0bbaa9c9d141e94ef7326bc60a10382
+2024-12-05 12:56:14,984 [1] INFO  AElf.Deploy.Cli.Program - Address: "2Z6mvXDLVuRzSEFUXwraF9zE3wUkEbJ42SQGmFrPbNQViDFw4e"
+Version: 1
+ContractVersion: 1.0.0.0
+Height: 152471260
+2024-12-05 12:56:15,289 [1] INFO  AElf.Deploy.Cli.Program - Deploy Contract Info: { "serialNumber": "2641", "author": "sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea", "codeHash": "fe0b9c89b58b0518729ae9d4e2345e79f0bbaa9c9d141e94ef7326bc60a10382", "version": 1, "contractVersion": "1.0.0.0", "isUserContract": true, "deployer": "sfhPfB3Dd1G8RdJjsaQx1G6zicQXHE6psDmJtLfJAiHzrNcea" }
